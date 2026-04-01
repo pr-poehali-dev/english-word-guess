@@ -7,21 +7,8 @@ const BODY_PARTS = [
   { name: "Nose", emoji: "👃", hint: "You use it to smell" },
   { name: "Mouth", emoji: "👄", hint: "You use it to eat and talk" },
   { name: "Ears", emoji: "👂", hint: "You use them to hear" },
-  { name: "Hair", emoji: "💇", hint: "It grows on top of your head" },
-  { name: "Neck", emoji: "🦒", hint: "It connects head to shoulders" },
-  { name: "Shoulders", emoji: "🤷", hint: "They're above your arms" },
-  { name: "Arm", emoji: "💪", hint: "You have two of these" },
   { name: "Hand", emoji: "✋", hint: "It has five fingers" },
-  { name: "Fingers", emoji: "🤙", hint: "You have ten of these" },
   { name: "Leg", emoji: "🦵", hint: "You walk with these" },
-  { name: "Foot", emoji: "🦶", hint: "It's at the end of your leg" },
-  { name: "Knee", emoji: "🙇", hint: "It bends in the middle of your leg" },
-  { name: "Back", emoji: "🔙", hint: "It's behind your chest" },
-  { name: "Belly", emoji: "🤰", hint: "Your tummy!" },
-  { name: "Tongue", emoji: "👅", hint: "It's inside your mouth" },
-  { name: "Teeth", emoji: "🦷", hint: "You brush them every day" },
-  { name: "Chin", emoji: "🧔", hint: "It's below your mouth" },
-  { name: "Cheek", emoji: "😊", hint: "They turn red when you blush" },
 ];
 
 function shuffle<T>(arr: T[]): T[] {
