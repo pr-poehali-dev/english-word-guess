@@ -17,31 +17,28 @@ const GAMES = [
   {
     id: "colors",
     emoji: "🎨",
-    title: "Угадай по цветам",
-    description: "Угадай цвет по его оттенку!",
+    title: "Guess the Color",
+    description: "Guess the color by its shade!",
     gradient: "linear-gradient(135deg, #FF6B35, #FF85A1)",
     shadow: "0 6px 0 #CC4422, 0 10px 20px rgba(255,107,53,0.4)",
-    hoverGlow: "rgba(255,107,53,0.3)",
     path: "/colors",
   },
   {
     id: "body",
     emoji: "👁️",
-    title: "Угадай часть тела",
-    description: "Уши, глаза, нос, рот, волосы, руки, ноги!",
+    title: "Body Parts",
+    description: "Ears, eyes, nose, mouth, hair, hands, feet!",
     gradient: "linear-gradient(135deg, #4ECDC4, #6BCB77)",
     shadow: "0 6px 0 #2A9D8F, 0 10px 20px rgba(78,205,196,0.4)",
-    hoverGlow: "rgba(78,205,196,0.3)",
     path: "/body",
   },
   {
     id: "numbers",
     emoji: "🔢",
-    title: "Угадай числа",
-    description: "Числа от 1 до 20 — проверь память!",
+    title: "Guess the Number",
+    description: "Numbers from 1 to 20 — test your memory!",
     gradient: "linear-gradient(135deg, #A78BFA, #818CF8)",
     shadow: "0 6px 0 #7C3AED, 0 10px 20px rgba(167,139,250,0.4)",
-    hoverGlow: "rgba(167,139,250,0.3)",
     path: "/numbers",
   },
 ];
@@ -72,13 +69,13 @@ export default function Index() {
               filter: "drop-shadow(2px 2px 0px rgba(255,107,53,0.3))",
             }}
           >
-            Угадай-ка!
+            Word Quest!
           </h1>
           <p
             className="text-xl font-bold"
             style={{ color: "#A78BFA" }}
           >
-            Выбери игру и начинай! 🎮
+            Pick a game and start playing! 🎮
           </p>
         </div>
 
