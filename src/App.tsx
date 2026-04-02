@@ -1,13 +1,15 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Index from "./pages/Index";
-import Colors from "./pages/Colors";
-import Body from "./pages/Body";
-import Numbers from "./pages/Numbers";
+import SpaceHome from "./pages/SpaceHome";
+import ArticlesGame from "./pages/ArticlesGame";
+import PresentSimpleGame from "./pages/PresentSimpleGame";
+import QuestionWordsGame from "./pages/QuestionWordsGame";
+import SportsGame from "./pages/SportsGame";
+import ProfessionsGame from "./pages/ProfessionsGame";
+import AppearanceGame from "./pages/AppearanceGame";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -19,11 +21,13 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/colors" element={<Colors />} />
-          <Route path="/body" element={<Body />} />
-          <Route path="/numbers" element={<Numbers />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+          <Route path="/" element={<SpaceHome />} />
+          <Route path="/articles" element={<ArticlesGame />} />
+          <Route path="/present-simple" element={<PresentSimpleGame />} />
+          <Route path="/question-words" element={<QuestionWordsGame />} />
+          <Route path="/sports" element={<SportsGame />} />
+          <Route path="/professions" element={<ProfessionsGame />} />
+          <Route path="/appearance" element={<AppearanceGame />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
